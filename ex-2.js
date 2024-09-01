@@ -375,4 +375,13 @@ const bills = [
 
 // Start coding here
 
-const newBills;
+let newBills;
+
+function onlyMemberValue (bills){
+  return bills["member"] !== null
+}
+
+newBills = bills.filter(onlyMemberValue)
+console.log(newBills);
+
+

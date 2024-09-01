@@ -374,4 +374,28 @@ const bills = [
 ];
 
 // Start coding here
-const billMembers;
+let billMembers
+
+
+let newBills;
+
+function onlyMemberValue (bills){
+  return bills["member"] !== null
+}
+
+newBills = bills.filter(onlyMemberValue)
+//console.log(newBills);
+
+for(let i=0; i<newBills.length; i++){
+  console.log(newBills[i]["member"]["name"]);
+  
+}
+
+
+
+
+
+
+
+
+

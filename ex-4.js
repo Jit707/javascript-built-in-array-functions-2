@@ -374,4 +374,6 @@ const bills = [
 ];
 
 // Start coding here
-const totalMembers;
+
+//console.log(bills[0]["member"]["name"]);
+

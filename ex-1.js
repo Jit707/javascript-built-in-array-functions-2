@@ -361,8 +361,8 @@ const bills = [
   },
   {
     id: "36",
-    transactionDate: "2021-08-25",
-    total: 74321,
+    transactionDate: "2021-08-25",//paydate
+    total: 74321,//totalprice
     location: "Nakhon Sawan",
     paymentType: "QR",
     member: {
@@ -374,3 +374,9 @@ const bills = [
 ];
 
 // Start coding here
+function sum (accumulator , bills){
+return accumulator + bills["total"]
+}
+
+let totalPrice = bills.reduce(sum,0)
+console.log(totalPrice);
